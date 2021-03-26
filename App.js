@@ -2,7 +2,8 @@ import React from 'react';
 import { SafeAreaView, Button } from 'react-native';
 import estilo from './components/style';
 
-import Diferenciar from './components/Diferenciar'
+import RendCondicional from './components/RendCondicional'
+// import Diferenciar from './components/Diferenciar'
 // import Contador from './components/contador/ContadorV2'
 // import Pai from './components/indireta/Pai'
 // import Pai from './components/direta/Pai'
@@ -15,22 +16,17 @@ import Diferenciar from './components/Diferenciar'
 
 export default () => (
   <SafeAreaView style={estilo.align}> 
-    <Diferenciar/>    
+    <RendCondicional num={2}/>
 
+    {/* <Diferenciar/>     */}
     {/* <Contador/> */}
-    
     {/* <Pai/> */}
-    
     {/* <Contador inicial={50} passo={3}/>
     <Contador/> */}
-
     {/* <Botao/> */}
-
     {/* <Aleatorio min={7} max={27}/> */}
-
     {/* <MinMax min={2} max={20} />
     <MinMax min={40} max={80} /> */}
-    
     {/* <Comp1/>
     <Comp2/>
     <Primeiro/> */}
