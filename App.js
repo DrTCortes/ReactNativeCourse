@@ -1,8 +1,10 @@
 import React from 'react';
-import { View, Button } from 'react-native';
+import { SafeAreaView, Button } from 'react-native';
 import estilo from './components/style';
 
-import Pai from './components/indireta/Pai'
+import Diferenciar from './components/Diferenciar'
+// import Contador from './components/contador/ContadorV2'
+// import Pai from './components/indireta/Pai'
 // import Pai from './components/direta/Pai'
 // import Contador from './components/Contador';
 // import { Comp1, Comp2 } from './components/Multi';
@@ -12,8 +14,10 @@ import Pai from './components/indireta/Pai'
 // import Botao from './components/Botao';
 
 export default () => (
-  <View style={estilo.align}> 
-    <Pai/>
+  <SafeAreaView style={estilo.align}> 
+    <Diferenciar/>    
+
+    {/* <Contador/> */}
     
     {/* <Pai/> */}
     
@@ -30,5 +34,5 @@ export default () => (
     {/* <Comp1/>
     <Comp2/>
     <Primeiro/> */}
-  </View>
+  </SafeAreaView>
 );
