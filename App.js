@@ -2,7 +2,9 @@ import React from 'react';
 import { SafeAreaView, Button } from 'react-native';
 import estilo from './components/style';
 
-import RendCondicional from './components/RendCondicional'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+// import ListaProdutos from './components/produtos/ListaProdutos'
+// import RendCondicional from './components/RendCondicional'
 // import Diferenciar from './components/Diferenciar'
 // import Contador from './components/contador/ContadorV2'
 // import Pai from './components/indireta/Pai'
@@ -16,8 +18,9 @@ import RendCondicional from './components/RendCondicional'
 
 export default () => (
   <SafeAreaView style={estilo.align}> 
-    <RendCondicional num={2}/>
+    <ListaProdutosV2/>
 
+    {/* <RendCondicional num={2}/> */}
     {/* <Diferenciar/>     */}
     {/* <Contador/> */}
     {/* <Pai/> */}
