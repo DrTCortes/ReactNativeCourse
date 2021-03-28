@@ -1,8 +1,11 @@
 import React from 'react';
-import { SafeAreaView, Button } from 'react-native';
-import estilo from './components/style';
+import { SafeAreaView, Button, StyleSheet } from 'react-native';
 
-import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+import FlexboxV3 from './components/layout/FlexboxV3'
+// import FlexboxV2 from './components/layout/FlexboxV2'
+// import FlexboxV1 from './components/layout/FlexboxV1'
+// import DigiteNome from './components/CompControlado'
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 // import ListaProdutos from './components/produtos/ListaProdutos'
 // import RendCondicional from './components/RendCondicional'
 // import Diferenciar from './components/Diferenciar'
@@ -17,9 +20,12 @@ import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 // import Botao from './components/Botao';
 
 export default () => (
-  <SafeAreaView style={estilo.align}> 
-    <ListaProdutosV2/>
-
+  <SafeAreaView style={style.App}> 
+    <FlexboxV3/>
+    {/* <FlexboxV2/> */}
+    {/* <FlexboxV1/> */}
+    {/* <DigiteNome/> */}
+    {/* <ListaProdutosV2/> */}
     {/* <RendCondicional num={2}/> */}
     {/* <Diferenciar/>     */}
     {/* <Contador/> */}
@@ -34,4 +40,13 @@ export default () => (
     <Comp2/>
     <Primeiro/> */}
   </SafeAreaView>
-);
+)
+
+const style = StyleSheet.create({
+  App:{
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    margin:20,
+  }
+})
